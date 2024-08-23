@@ -19,7 +19,7 @@ pipeline {
             steps {
                 script {
                     dir('eks-cluster') {
-                        sh 'terraform init'
+                        sh 'terraform init -reconfigure'
                     }
                 }
             }
