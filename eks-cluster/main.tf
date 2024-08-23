@@ -2,6 +2,7 @@ provider "aws" {
   region = var.region
 }
 terraform {
+/*
   backend "s3" {
     bucket         = "terraform-state-awake"
     key            = "johannesburg/terraform.tfstate"
@@ -10,7 +11,8 @@ terraform {
     dynamodb_table = "my-lock-table"  # Optional, for state locking
   }
 }
-
+*/
+}
 module "vpc" {
   source             = "./modules/vpc"
   region             = var.region
