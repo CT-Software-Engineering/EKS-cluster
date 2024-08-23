@@ -7,8 +7,8 @@ terraform {
     bucket         = "terraform-state-awake"
     key            = "johannesburg/terraform.tfstate"
     region         = "eu-west-1"
-    encrypt        = true
-    dynamodb_table = "my-lock-table"  # Optional, for state locking
+    encrypt        = false
+    #dynamodb_table = "my-lock-table"  # Optional, for state locking
   }
 }
 
