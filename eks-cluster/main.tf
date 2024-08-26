@@ -4,10 +4,10 @@ provider "aws" {
 terraform {
 
   backend "s3" {
-    bucket         = "terraform-state-awake"
-    key            = "johannesburg/terraform.tfstate"
-    region         = "eu-west-1"
-    encrypt        = false
+    bucket  = "terraform-state-awake"
+    key     = "johannesburg/terraform.tfstate"
+    region  = "eu-west-1"
+    encrypt = false
     #dynamodb_table = "my-lock-table"  # Optional, for state locking
   }
 }
